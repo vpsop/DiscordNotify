@@ -76,7 +76,7 @@ class Main extends PluginBase
             // An exclamation mark pfp URl
             $whAvatar = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl10-O-B5WQzfT-AMca0EcKiboofwetosvKhYTxuoUot4h-Cf_Z12i2r73IfCfMV9QlNk&usqp=CAU";
         }
-        $whURL = ConfigManager::getMessage("webhookURL");
+        $whURL = ConfigManager::getMessage("chat-webhookURL");
         $whData = array('content' => $msg, 'username' => $whUsername, 'avatar_url' => $whAvatar);
 
         $this->getServer()->getAsyncPool()->submitTask(new SendMessageTask($whURL, $msg, $whData));
