@@ -3,5 +3,5 @@ name: DiscordNotify
 author: ApexDev
 main: ApexDev\DiscordNotify\Main
 api: [3.0.0]
-version: 0.0.2
+version: 0.1.0
 ...

@@ -1,7 +1,8 @@
 <?php
 
-namespace ApexDev\DiscordNotify;
+namespace ApexDev\DiscordNotify\utils;
 
+use ApexDev\DiscordNotify\Main;
 use pocketmine\utils\TextFormat as TF;
 
 class ConfigManager
