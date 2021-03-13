@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace ApexDev\DiscordNotify;
 
-
+use ApexDev\DiscordNotify\utils\ConfigManager;
 use pocketmine\event\Listener;
 use pocketmine\event\player\cheat\PlayerCheatEvent;
 use pocketmine\event\player\PlayerChatEvent;
@@ -35,8 +35,10 @@ class EventListener implements Listener
 
     public function onPlayerChat(PlayerChatEvent $e)
     {
-        $name = $e->getPlayer()->getName();
-        $chatMsg = $e->getMessage();
-        $this->plugin->sendDiscordChat($name, $chatMsg);
+        if(ConfigManager::getToggle("chat-to-discord")){
+            $name = $e->getPlayer()->getName();
+            $chatMsg = $e->getMessage();
+            $this->plugin->sendDiscordChat($name, $chatMsg);
+        }
     }
 }

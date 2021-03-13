@@ -13,4 +13,6 @@ player-leave-message: "{Player} left the Server :("
 
 ################## Chat Message Configuration ####################
 
+chat-to-discord: true
+
 chat-webhookURL: "Another Discord Webhook URL"
