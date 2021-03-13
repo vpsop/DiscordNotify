@@ -1,0 +1,7 @@
+## Profile Picture URLs for Users. For example if you want to set a custom profile picture for a minecraft user named VPS5444.
+## VPS5444 : "https://lh3.googleusercontent.com/ogw/ADGmqu9cRsq64VFmuMvCv-bAxqemSgNY_arLf8Bk5tbY=s83-c-mo"
+## The above line sets a custom profile pic for VPS5444. So whenever VPS5444 will send a message on your minecraft server this will
+## send a message to your discord server using webhook with the profile pic taken from the given URL.
+## If no url is given for a user the default will be used.
+
+VPS5444 : "https://lh3.googleusercontent.com/ogw/ADGmqu9cRsq64VFmuMvCv-bAxqemSgNY_arLf8Bk5tbY=s83-c-mo"
