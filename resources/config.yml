@@ -1,0 +1,11 @@
+#### Do not touch the version thing until you know what you are doing ####
+version: "0.0.2"
+####
+
+
+
+webhookURL: "Your Discord Webhook URL"
+webhookUsername: "DiscordNotify"
+
+player-join-message: "{Player} joined the Server :)"
+player-leave-message: "{Player} left the Server :("
