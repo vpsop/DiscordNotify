@@ -42,7 +42,7 @@ class SendMessageTask extends AsyncTask
             $success = true;
         }
         $result = ['Response' => $response, 'Error' => $error, 'success' => $success];
-        $this->setResult($result, true);
+        $this->setResult($result);
     }
 
     public function onCompletion(Server $server)
